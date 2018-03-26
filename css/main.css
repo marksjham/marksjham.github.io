@@ -1,0 +1,48 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background: grey;
+}
+
+.nav_bar {
+  padding: 10px;
+  margin: auto;
+  width: 100%;
+  background-color: lightblue;
+  box-sizing: border-box;
+  box-shadow: 0 1px 10px;
+  position: sticky;
+  
+}
+
+.nav_container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.nav_bar a {
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+}
+
+.nav_bar .logo {
+  font-size: 40px;
+}
+
+.nav_item {
+  float: right;
+  margin: 0 5px;
+  padding: 10px;
+}
+
+.nav_item:hover {
+  background-color: blue;
+}
+
+.content {
+  max-width: 1000px;
+  padding: 10px;
+  box-sizing: border-box;
+  margin: auto;
+  background-color: #A9A9A9;
+}
