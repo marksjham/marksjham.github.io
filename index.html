@@ -4,29 +4,46 @@
     <title>Seong Ju "Mark" Ham</title>
     <link type="text/css" rel="stylesheet" href="css/normalize.css" />
     <link type="text/css" rel="stylesheet" href="css/main.css" />
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Space+Mono|VT323" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   
   <body>
     <div class="nav_bar">
       <div class="nav_container">
-        <a href="index.html" class="logo">Seong Ju "Mark" Ham</a>
-        <a href="#" class="nav_item">Contact</a>
-        <a href="#" class="nav_item">Projects</a>
+        <a href="index.html" class="logo">Seong Ju <div id="mark">Mark</div> Ham</a>
+        <a href="#contact" class="nav_item">Contact</a>
+        <a href="#projects" class="nav_item">Projects</a>
         <a href="#about" class="nav_item">About</a>
       </div>
     </div>
     
     <div id="about" class="content">
-      About me
-      formspree
+      <h2>About Me</h2>
+      I am a full stack developer with a background in the military serving in the National Guard and entrepreneurship in managing the family business. My passion for problem solving and analyzing rooted in my interest and experience in mathematics competitions and tutoring opportunities drives me to continually learn and develop myself. I am currently seeking a web developer position to contribute to the company using my expertise and further my experience in web development.
     </div>
     <div id="projects" class="content">
-      Projects
+      <h2>Projects</h2>
+      <div class="project">
+        <img src="image/ohrny_small.png" alt="ohrny.com" class="image_resp image_project">
+        <div>
+          Website for o h r
+          <br>
+          Built using Ruby on Rails, Sass, and PostgreSQL
+        </div>
+      </div>
     </div>
     <div id="contact" class="content">
-      Contact me
+      <h2>Contact Me</h2>
+      <form action="https://formspree.io/marksjham@gmail.com" method="POST">
+        <div>Name</div>
+        <input type="text" name="name">
+        <div>Email</div>
+        <input type="email" name="_replyto">
+        <div>Message</div>
+        <textarea name="message"></textarea>
+        <input type="submit" value="Send">
+      </form>
     </div>
     
     
