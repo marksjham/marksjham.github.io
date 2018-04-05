@@ -1,11 +1,6 @@
 body {
   font-family: 'Roboto', sans-serif;
-  background: lightgrey;
-}
-
-#mark {
-  font-family: 'VT323', monospace;
-  display: inline-block;
+  background: #F5F5F6;
 }
 
 .nav_bar {
@@ -31,14 +26,14 @@ body {
 
 .nav_bar .logo {
   font-size: 40px;
-    font-family: 'Space Mono', monospace;
+    font-family: 'VT323', monospace;
 }
 
 .nav_item {
   float: right;
   margin: 0 5px;
   padding: 10px;
-  transition: background-color 0.5s;
+  transition: background-color 0.6s ease;
 }
 
 .nav_item:hover {
@@ -50,7 +45,7 @@ body {
   padding: 20px;
   box-sizing: border-box;
   margin: auto;
-  background-color: white;
+  background-color: #E1E2E1;
 }
 
 .project {
@@ -63,7 +58,7 @@ body {
 }
 
 .image_project {
-  width: 400px;
+  max-width: 400px;
   position: relative;
 }
 
