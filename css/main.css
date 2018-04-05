@@ -10,7 +10,8 @@ body {
   background-color: #039be5;
   box-sizing: border-box;
   box-shadow: 0 1px 10px;
-  position: sticky;
+  position: fixed;
+  z-index: 1;
 }
 
 .nav_container {
@@ -26,7 +27,8 @@ body {
 
 .nav_bar .logo {
   font-size: 40px;
-    font-family: 'VT323', monospace;
+  font-family: 'VT323', monospace;
+  padding-left: 20px;
 }
 
 .nav_item {
@@ -34,11 +36,38 @@ body {
   margin: 0 5px;
   padding: 10px;
   transition: background-color 0.6s ease;
+  border-radius: 9px;
 }
 
 .nav_item:hover {
   background-color: #63ccff;
 }
+
+.nav_menu {
+  display: none;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 40px !important;
+  margin: auto;
+}
+
+@media screen and (max-width: 600px) {
+  .nav_menu {
+    display: block;
+  }
+  
+  .nav_item {
+    display: none;
+  }
+  
+  .nav_bar .nav_responsive {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
 
 .content {
   max-width: 900px;
@@ -46,6 +75,10 @@ body {
   box-sizing: border-box;
   margin: auto;
   background-color: #E1E2E1;
+}
+
+#about {
+  padding-top: 66px !important;
 }
 
 .project {
@@ -83,10 +116,12 @@ body {
 .icon {
   padding: 10px;
   transition: background-color .5s ease;
+  border-radius: 15px;
 }
 
 .icon:hover {
   background-color: #63ccff;
+
 }
 
 footer {
@@ -97,3 +132,4 @@ footer {
   margin: auto;
   text-align: center;
 }
+
