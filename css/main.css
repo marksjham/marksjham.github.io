@@ -79,3 +79,21 @@ body {
 #about.content {
   padding: 20px;
 }
+
+.icon {
+  padding: 10px;
+  transition: background-color .5s ease;
+}
+
+.icon:hover {
+  background-color: #63ccff;
+}
+
+footer {
+  max-width: 900px;
+  font-size: 10px;
+  color: grey;
+  padding: 20px;
+  margin: auto;
+  text-align: center;
+}
